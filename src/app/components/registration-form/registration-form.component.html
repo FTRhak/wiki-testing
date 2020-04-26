@@ -1,0 +1,29 @@
+<div class="row justify-content-center mt-3">
+  <div class="col-6 align-self-center">
+    <div class="card p-3" *ngIf="form">
+      <h1>Registration</h1>
+      <form (submit)="onSubmit()" [formGroup]="form">
+        <div class="form-group">
+          <label>User name:</label>
+          <input type="text" class="form-control" formControlName="userName">
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" class="form-control" formControlName="email">
+        </div>
+        <div class="form-group">
+          <label>Password:</label>
+          <input type="text" class="form-control" formControlName="password">
+        </div>
+        <div class="form-group">
+          <label>Password confirm:</label>
+          <input type="text" class="form-control" formControlName="password">
+        </div>
+        <div class="form-group">          
+          <button class="btn btn-secondary">Back</button>
+          <button type="submit" class="btn btn-primary ml-2">Registrate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
